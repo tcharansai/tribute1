@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	body{
+		margin-left: 20%;
+	}
+	#title{
+		font-family: Tahoma;
+	}
+	#form{
+		font-size: 18px;
+		padding: 10px;
+		border-radius: 10px;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 70%;
+	}
+	label{
+		font-family: Consolas;
+	}
+	#name,#email,#number,#dropdown{
+		background-color: rgba(0, 0, 0, 0.0);
+		text-align: center;
+		border: 0px;
+		border-bottom: 3px solid black;
+		width: 70%;
+	}
+	#textarea{
+		background-color: rgba(0, 0, 0, 0.0);
+		width: 75%;
+		height: 50px;
+		border: 2px solid black;
+		border-radius: 10px;
+	}
+	#check_lan{
+		text-align: left;
+		padding-left: 0px;
+		margin-left: 30%;
+	}
+	#submit{
+		background-color: black;
+		width: 30%;
+		height: 35px;
+		color: white;
+		border-radius: 25px;
+	}
+	@media(max-width: 900px){
+		body{
+			margin-left: 0%;
+		}
+		#form{
+			width: 100%;
+			border-radius: 0px;
+			font-size: 15px;
+		}
+	}
+</style>
+<body>
+	<div id="form">
+		<div>
+			<h1 id="title"> GUCC Verification Form </h1>
+		</div>
+		<form action="" id="survey-form">
+			<label><i class="fa fa-user" style="font-size:24px"></i>	Enter your Name</label><br><br>
+			<input type="text" name="name" id="name" required><br><br>
+			<label><i class="fa fa-envelope" style="font-size:24px"></i>	Enter your E-Mail</label><br><br>
+			<input type="email" name="email" id="email"><br><br>
+			<label><i class="fa fa-phone" style="font-size:24px"></i>	Enter your Mobile Number</label><br><br>
+			<input type="number" name="number" id="number" maxlength="10" required><br><br>
+			<label><i class="fa fa-calendar" style="font-size:24px"></i>	Enter your Age</label><br><br>
+			<input type="number" name="age" id="number" min="15" max="60" required><br><br>
+			<label>Enter your Gender</label><br>
+			<input type="radio" name="radio"><label>Male</label>
+			<input type="radio" name="radio"><label>Female</label>
+			<input type="radio" name="radio"><label>Transgender</label><br><br>
+			<select id="dropdown" required>
+				<option>Select your state</option>
+				<option>Andhra Pradesh</option>
+				<option>Arunachal Pradesh</option>
+				<option>Assam</option>
+				<option>Bihar</option>
+				<option>Chhattisgarh</option>
+				<option>Goa</option>
+				<option>Gujarat</option>
+				<option>Haryana</option>
+				<option>Himachal Pradesh</option>
+				<option>Jharkhand</option>
+				<option>Karnataka</option>
+				<option>Kerala</option>
+				<option>Madhya Pradesh</option>
+				<option>Maharashtra</option>
+				<option>Manipur</option>
+				<option>Meghalaya</option>
+				<option>Mizoram</option>
+				<option>Nagaland</option>
+				<option>Odisha</option>
+				<option>Punjab</option>
+				<option>Rajasthan</option>
+				<option>Sikkim</option>
+				<option>Tamil Nadu</option>
+				<option>Telangana</option>
+				<option>Tripura</option>
+				<option>Uttar Pradesh</option>
+				<option>Uttarakhand</option>
+				<option>West Bengal</option>
+			</select><br><br>
+			<div id="check_lan">
+				<label>Select your Course Domin</label><br><br>
+				<input type="checkbox" name="check">Python Programming <br><br>
+				<input type="checkbox" name="check"> Full Stack Java Development <br><br>
+				<input type="checkbox" name="check"> Full Stack Web Development <br><br>
+				<input type="checkbox" name="check"> Full Stack Mern Development <br><br>
+				<input type="checkbox" name="check"> Artificial Intelligence <br><br>
+				<input type="checkbox" name="check"> Machine Learning <br><br>
+				<input type="checkbox" name="check"> Deep Learning <br><br>
+				<input type="checkbox" name="check"> Data Science <br><br>
+				<input type="checkbox" name="check"> Digital Marketing</label><br><br>
+				<input type="checkbox" name="check"> DBMS <br><br>
+				<input type="checkbox" name="check"> Data Mining <br><br>
+				<input type="checkbox" name="check"> Android Development</label><br><br>
+				<input type="checkbox" name="check"> iOS Development <br><br>
+			</div>
+			<label>Enter the Reson for Choosing this Course</label><br><br>
+			<textarea id="textarea"></textarea><br><br>
+			<input type="submit" name="submit" id="submit"> <input type="reset" name="reset" id="submit"><br><br>
+		</form>
+	</div>
+</body>
+</html>
